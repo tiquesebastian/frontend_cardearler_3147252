@@ -23,6 +23,22 @@ export default function ListaCategorias() {
 
     <>
     <h1>ListaCategorias</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            { brands.map( ( b:any ) => ( 
+                <tr>
+                    <td>{ b.id }</td>
+                    <td>{ b.nombre_localidad }</td>
+                </tr>
+             )) }
+        </tbody>
+    </table>
     </>
 
   )
